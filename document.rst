@@ -46,6 +46,36 @@ Git Memento
 
     PageBreak
 
+
+.. Example:
+.. git checkout english-version
+.. ...
+.. git add .
+.. git commit -m "..."
+.. git push origin english-version
+.. git checkout master
+.. git merge english-version
+.. git push
+
+
+Remotes
+=======
+
+Clone a remote repository
+-------------------------
+
+::
+
+    git clone REMOTE [LOCAL_DIRECTORY]
+
+Example::
+
+    git clone https://github.com/jdhp-docs/git-memento.git
+
+Only the ``master`` branch is available in the local repository.
+To get other branches from the remote repository see get_remote_branch_.
+
+
 Tags
 ====
 
@@ -100,6 +130,8 @@ Example::
 
     git ls-remote --tags origin
 
+.. http://stackoverflow.com/questions/6294224/check-if-pushed-tag-is-on-the-git-remote
+
 Push an annotated tag to a remote repository
 --------------------------------------------
 
@@ -128,8 +160,95 @@ The latter is safer but anyway, it's generally considered a bad practice to
 push *all* tags automatically with these two commands. Be sure you're not
 pushing unwanded tags.
 
+
 Branches
 ========
+
+Create a local branch
+---------------------
+
+::
+
+    git branch BRANCH_NAME
+
+Example::
+
+    git branch experimental
+
+
+List local branches
+-------------------
+
+::
+
+    git branch
+
+The current branch is the starred one.
+
+
+Change the current branch
+-------------------------
+
+::
+
+    git checkout BRANCH_NAME
+
+Example::
+
+    git checkout experimental
+
+
+List remote branches
+--------------------
+
+::
+
+    git branch -a REMOTE
+
+Example::
+
+    git branch -a origin
+
+.. http://stackoverflow.com/questions/67699/clone-all-remote-branches-with-git
+
+
+Get a graphical representation of all branches (local and remote branches)
+--------------------------------------------------------------------------
+
+::
+
+    gitk --all
+
+
+Push a local branche to a remote repository
+-------------------------------------------
+
+::
+
+    git checkout LOCAL_BRANCH_NAME
+    git push REMOTE REMOTE_BRANCH_NAME
+
+Example::
+
+    git checkout experimental
+    git push origin experimental
+
+
+.. _get_remote_branch:
+
+Get given branche from a cloned remote repository
+-------------------------------------------------
+
+::
+
+    git checkout -b LOCAL_BRANCH_NAME REMOTE/REMOTE_BRANCH_NAME
+
+Example::
+
+    git checkout -b experimental origin/experimental
+
+.. http://stackoverflow.com/questions/67699/clone-all-remote-branches-with-git
+
 
 .. ............................................................................
 
