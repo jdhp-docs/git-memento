@@ -15,6 +15,8 @@ SOURCE_URL="https://github.com/jdhp-docs/TODO"
 
 HTML_STYLESHEET="style/html/rst2html.css"
 
+HTML_TMP_DIR="html_tmp"
+
 ###############################################################################
 
 all: $(NAME).html $(NAME).pdf
@@ -78,13 +80,13 @@ jdhp:$(NAME).pdf $(NAME).html
 	@if test -z $$JDHP_DOCS_URI ; then exit 1 ; fi
 
 	# Copy HTML
-	@rm -rf $(NAME)/
-	@mkdir $(NAME)/
-	cp -v $(NAME).html $(NAME)/
-	cp -vr images $(NAME)/
+	@rm -rf $(HTML_TMP_DIR)/
+	@mkdir $(HTML_TMP_DIR)/
+	cp -v $(NAME).html $(HTML_TMP_DIR)/
+	cp -vr images $(HTML_TMP_DIR)/
 
 	# Upload the HTML files
-	rsync -r -v -e ssh $(NAME) ${JDHP_DOCS_URI}/
+	rsync -r -v -e ssh $(HTML_TMP_DIR)/ ${JDHP_DOCS_URI}/$(NAME)/
 	
 	# JDHP_DL_URI is a shell environment variable that contains the destination
 	# URI of the PDF files.
@@ -107,5 +109,5 @@ init: clean
 	@rm -vf $(NAME).odt
 	@rm -vf $(NAME).latex
 	@rm -vf $(NAME)_slides.html
-	@rm -rf $(NAME)/
+	@rm -rf $(HTML_TMP_DIR)/
 
