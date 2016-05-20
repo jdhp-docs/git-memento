@@ -144,7 +144,7 @@ is provided under the terms and conditions of the |CC BY-SA 4.0|_ license.
 
 .. ............................................................................
 
-.. _TODO: http://www.jdhp.org/tutorials_TODO.html#git-memento
+.. _Git Memento: http://www.jdhp.org/tutorials_en.html#git-memento
 .. _Jérémie Decock: http://www.jdhp.org/
 
 .. |CC BY-SA 4.0| replace:: Creative Commons 4.0 (CC BY-SA 4.0)
