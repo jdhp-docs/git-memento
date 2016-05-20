@@ -58,6 +58,16 @@ Git Memento
 .. git push
 
 
+Setup Git
+=========
+
+::
+
+    git config --global ...
+    git config --global ...
+    git config --global ...
+
+
 Remotes
 =======
 
