@@ -2,6 +2,7 @@
 
 ## Skeleton
 
+- [ ] Make 2 git branches: one for the french version and one for the english version
 - [ ] The pdf-latex target in the Makefile should produce a .pdf file, not a .latex.pdf file! This implies a variable should be added ("USE_PDF_LATEX") and tested in the .pdf target...
 - [ ] Add templates ? (e.g. https://github.com/bendiken/ar.to/blob/master/.rst2html/template.html)
     - HTML meta
