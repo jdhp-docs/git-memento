@@ -88,6 +88,18 @@ or
 
     git tag -l
 
+
+List remote tags
+----------------
+
+::
+
+    git ls-remote --tags REMOTE
+
+Example::
+
+    git ls-remote --tags origin
+
 Push an annotated tag to a remote repository
 --------------------------------------------
 
