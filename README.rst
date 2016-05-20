@@ -1,33 +1,28 @@
-=================
-`RST JHDP Theme`_
-=================
+====
+`TODO`_
+====
 
-Copyright (c) 2015 Jeremie DECOCK (http://www.jdhp.org)
+Copyright (c) 2016 Jeremie DECOCK (http://www.jdhp.org)
 
-
-* Web site: http://www.jdhp.org/
-* Source code: https://github.com/jdhp-misc/rst_jdhp_theme
-* Issue tracker: https://github.com/jdhp-misc/rst_jdhp_theme/issues
-
+* Web site: http://www.jdhp.org/tutorials_TODO.html#TODO
+* Source code: https://github.com/jdhp-docs/TODO
+* Issue tracker: https://github.com/jdhp-docs/TODO/issues
 
 Description
 ===========
 
-This project is an open source theme for reStructuredText_.
-
-Note:
-
-    This project is still in beta stage.
-
+This repository contains the source files of the following document written by
+*Jérémie Decock* in TODO 2016:
+*TODO*.
 
 License
 =======
 
-This project is provided under the terms and conditions of the
-`MIT License`_.
+`TODO`_
+is provided under the terms and conditions of the `CC BY-SA 4.0 license`_.
 
+.. ............................................................................
 
-.. _RST JHDP Theme: https://github.com/jdhp-misc/rst_jdhp_theme
-.. _reStructuredText: http://docutils.sourceforge.net/rst.html
-.. _MIT License: http://opensource.org/licenses/MIT
+.. _TODO: http://www.jdhp.org/tutorials_TODO.html#TODO
+.. _CC BY-SA 4.0 license: http://creativecommons.org/licenses/by-sa/4.0/
 
