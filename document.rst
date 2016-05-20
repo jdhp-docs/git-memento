@@ -1,13 +1,13 @@
 .. -*- coding: utf-8 -*-
 
-====
-TODO
-====
+===========
+Git Memento
+===========
 
 :Author: Jérémie Decock
 :Contact: jd.jdhp@gmail.com
-:Revision: 1
-:Date: TODO/TODO/2016
+:Revision: 0.1
+:Date: 20/05/2016
 :Licence: |CC BY-SA 4.0|_
 
 .. ............................................................................
@@ -16,8 +16,8 @@ TODO
 
 .. meta::
     :author: Jérémie DECOCK
-    :description: TODO
-    :keywords: TODO, TODO, TODO
+    :description: A git memento
+    :keywords: git, github
     :copyright: Copyright (c) 2016 Jérémie DECOCK
 
 .. ............................................................................
@@ -46,13 +46,78 @@ TODO
 
     PageBreak
 
-TITLE 1
-=======
+Tags
+====
 
-TITLE 2
--------
+Create a lightweight tag
+------------------------
 
-TODO
+::
+
+    git tag TAG_NAME [SHA1]
+
+Example::
+
+    git tag v1.4
+
+
+Create an annotated tag
+-----------------------
+
+::
+
+    git tag -a TAG_NAME -m "MESSAGE" [SHA1]
+
+where ``-a`` means *annotated*.
+
+Example::
+
+    git tag -a v1.4 -m "My version 1.4"
+
+
+List local tags
+---------------
+
+::
+
+    git tag
+
+or
+
+::
+
+    git tag -l
+
+Push an annotated tag to a remote repository
+--------------------------------------------
+
+::
+
+    git push REMOTE TAG_NAME
+
+Example::
+
+    git push origin v1.4
+
+Push all tags to a remote repository
+------------------------------------
+
+::
+
+    git push --tags
+
+or
+
+::
+
+    git push --follow-tags
+
+The latter is safer but anyway, it's generally considered a bad practice to
+push *all* tags automatically with these two commands. Be sure you're not
+pushing unwanded tags.
+
+Branches
+========
 
 .. ............................................................................
 
@@ -73,13 +138,13 @@ License
 
 |CC BY-SA 4.0 image|_
 
-*TODO*
+*Git Memento*
 written by `Jérémie Decock`_
 is provided under the terms and conditions of the |CC BY-SA 4.0|_ license.
 
 .. ............................................................................
 
-.. _TODO: http://www.jdhp.org/tutorials_TODO.html#TODO
+.. _TODO: http://www.jdhp.org/tutorials_TODO.html#git-memento
 .. _Jérémie Decock: http://www.jdhp.org/
 
 .. |CC BY-SA 4.0| replace:: Creative Commons 4.0 (CC BY-SA 4.0)
