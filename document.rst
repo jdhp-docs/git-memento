@@ -36,7 +36,7 @@ TODO
 
 .. http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents
 
-.. contents:: Sommaire
+.. contents:: Table of Contents
 
 .. ............................................................................
 
@@ -73,8 +73,9 @@ License
 
 |CC BY-SA 4.0 image|_
 
-*TODO* de `Jérémie Decock`_ est mis à
-disposition selon les termes de la licence |CC BY-SA 4.0|_. 
+*TODO*
+written by `Jérémie Decock`_
+is provided under the terms and conditions of the |CC BY-SA 4.0|_ license.
 
 .. ............................................................................
 
