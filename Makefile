@@ -81,17 +81,17 @@ jdhp:$(NAME).pdf $(NAME).html
 	@rm -rf $(NAME)/
 	@mkdir $(NAME)/
 	cp -v $(NAME).html $(NAME)/
-	cp -vr fig $(NAME)/
+	cp -vr images $(NAME)/
 
 	# Upload the HTML files
-	#rsync -r -v -e ssh $(NAME) ${JDHP_DOCS_URI}/
+	rsync -r -v -e ssh $(NAME) ${JDHP_DOCS_URI}/
 	
 	# JDHP_DL_URI is a shell environment variable that contains the destination
 	# URI of the PDF files.
 	@if test -z $$JDHP_DL_URI ; then exit 1 ; fi
 	
 	# Upload the PDF file
-	#rsync -v -e ssh $(NAME).pdf ${JDHP_DL_URI}/pdf/
+	rsync -v -e ssh $(NAME).pdf ${JDHP_DL_URI}/pdf/
 
 ## CLEAN ######################################################################
 
@@ -107,4 +107,5 @@ init: clean
 	@rm -vf $(NAME).odt
 	@rm -vf $(NAME).latex
 	@rm -vf $(NAME)_slides.html
+	@rm -rf $(NAME)/
 
