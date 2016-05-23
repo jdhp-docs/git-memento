@@ -195,6 +195,46 @@ List local branches
 
 The current branch is the starred one.
 
+Rename a local branch
+---------------------
+
+To rename any local branch::
+
+    git branch -m OLD_NAME NEW_NAME
+
+Example::
+
+    git branch -m experimental testing
+
+To rename the current branch::
+
+    git branch -m NEW_NAME
+
+Example::
+
+    git branch testing
+
+Delete a local branch
+---------------------
+
+.. TODO
+
+For branches merged with the current branch::
+
+    git branch -d BRANCH_NAME
+
+Example::
+
+    git branch -d experimental
+
+For branches not merged with the current branch (dangerous)::
+
+    git branch -D BRANCH_NAME
+
+Example::
+
+    git branch -D experimental
+
 
 Change the current branch
 -------------------------
@@ -221,11 +261,42 @@ Example::
 
 .. http://stackoverflow.com/questions/67699/clone-all-remote-branches-with-git
 
+Rename a remote branch
+----------------------
+
+TODO
+
+.. http://stackoverflow.com/questions/4753888/git-renaming-branches-remotely
+
+Delete a remote branch
+----------------------
+
+.. TODO
+
+For branches merged with the current branch::
+
+    git push REMOTE --delete BRANCH_NAME
+
+or::
+
+    git push REMOTE :<BRANCH_NAME>
+
+Example::
+
+    git push origin --delete experimental
+
+.. https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Deleting-Remote-Branches
+.. http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely
+
 
 Get a graphical representation of all branches (local and remote branches)
 --------------------------------------------------------------------------
 
 ::
+
+    git log --oneline --decorate --graph --all
+
+or::
 
     gitk --all
 
@@ -246,8 +317,8 @@ Example::
 
 .. _get_remote_branch:
 
-Get given branche from a cloned remote repository
--------------------------------------------------
+Get a given branche from a cloned remote repository
+---------------------------------------------------
 
 ::
 
