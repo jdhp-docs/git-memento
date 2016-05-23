@@ -63,9 +63,9 @@ Setup Git
 
 ::
 
-    git config --global ...
-    git config --global ...
-    git config --global ...
+    git config --global user.name "Jeremie DECOCK"
+    git config --global user.email "jd.jdhp@gmail.com"
+    git config --global push.default simple
 
 
 Remotes
