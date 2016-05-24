@@ -61,11 +61,27 @@ Git Memento
 Setup Git
 =========
 
-::
+User information::
 
     git config --global user.name "Jeremie DECOCK"
     git config --global user.email "jd.jdhp@gmail.com"
+
+Setup push.default (see http://stackoverflow.com/questions/23918062/simple-vs-current-push-default-in-git-for-decentralized-workflow)::
+
     git config --global push.default simple
+
+Some useful aliases::
+
+    git config --global alias.ci commit
+    git config --global alias.co checkout
+    git config --global alias.st status
+    git config --global alias.br branch
+    git config --global alias.unstage "reset HEAD --"
+    git config --global alias.graph "log --oneline --decorate --graph --all"
+
+Add a GPG key (see https://help.github.com/articles/telling-git-about-your-gpg-key/)::
+
+    git config --global user.signingkey PUBLIC_KEY_ID
 
 
 Remotes
