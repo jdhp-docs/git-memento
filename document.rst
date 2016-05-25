@@ -330,6 +330,25 @@ Example::
     git checkout experimental
     git push origin experimental
 
+.. TODO: define what is an upstream...
+To automatically set ``REMOTE REMOTE_BRANCH_NAME`` as *upstream* for the
+current local branch (check the difference with ``git branch -vva``)::
+
+    git checkout LOCAL_BRANCH_NAME
+    git push -u REMOTE REMOTE_BRANCH_NAME
+
+Once upstream is set for the current local branch, there is no need to specify
+``REMOTE_BRANCH_NAME`` for a ``git push``/``git push``::
+
+    git push REMOTE
+
+Example::
+
+    git checkout experimental
+    git push -u origin experimental
+    ...
+    git push origin
+
 
 .. _get_remote_branch:
 
