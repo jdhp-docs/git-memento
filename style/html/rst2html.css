@@ -143,3 +143,9 @@ td, th {
     border: 1px solid #ddd;
     padding: 6px 13px;
 }
+
+/* rst2html messages (errors, warnings, ...) */
+
+div.system-message, div.system-message * {
+    background: #ff8080;
+}
