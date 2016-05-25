@@ -331,6 +331,7 @@ Example::
     git push origin experimental
 
 .. TODO: define what is an upstream...
+
 To automatically set ``REMOTE REMOTE_BRANCH_NAME`` as *upstream* for the
 current local branch (check the difference with ``git branch -vva``)::
 
