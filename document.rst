@@ -124,8 +124,8 @@ Show changes between the working tree (staged or not) and the repository
 
 .. TODO: improve the following title
 
-Show changes between given commits, tags, branches, trees or blobs
-------------------------------------------------------------------
+Show changes between two given commits, tags, branches, trees or blobs
+----------------------------------------------------------------------
 
 ::
 
