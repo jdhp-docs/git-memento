@@ -70,6 +70,14 @@ Setup push.default (see http://stackoverflow.com/questions/23918062/simple-vs-cu
 
     git config --global push.default simple
 
+Setup colors::
+
+    git config --global color.branch auto
+    git config --global color.diff auto
+    git config --global color.grep auto
+    git config --global color.interactive auto
+    git config --global color.status auto
+
 Some useful aliases::
 
     git config --global alias.ci commit
@@ -79,10 +87,68 @@ Some useful aliases::
     git config --global alias.unstage "reset HEAD --"
     git config --global alias.graph "log --oneline --decorate --graph --all"
 
-Add a GPG key (see https://help.github.com/articles/telling-git-about-your-gpg-key/)::
+Add a GPG key (see https://help.github.com/articles/telling-git-about-your-gpg-key/ and https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work ; for GitHub users see https://github.com/blog/2144-gpg-signature-verification)::
 
     git config --global user.signingkey PUBLIC_KEY_ID
 
+
+Viewing difference
+==================
+
+.. TODO: improve the following title
+
+Show changes in the working tree that haven't been staged or committed yet
+--------------------------------------------------------------------------
+
+::
+
+    git diff
+
+.. TODO: improve the following title
+
+Show changes in the working tree that have been staged
+------------------------------------------------------
+
+::
+
+    git diff --cached
+
+.. TODO: improve the following title
+
+Show changes between the working tree (staged or not) and the repository
+------------------------------------------------------------------------
+
+::
+
+    git diff HEAD
+
+.. TODO: improve the following title
+
+Show changes between given commits, tags, branches, trees or blobs
+------------------------------------------------------------------
+
+::
+
+    git diff A B
+
+or::
+
+    git diff A..B
+
+where ``A`` and ``B`` can be *commits*, *tags*, *branches*, *trees* or *blobs*.
+
+Example::
+
+    git diff ff20b..ea76d
+    git diff v1..v2
+    git diff master..expermiental
+
+Show changes between B and the first common ancestor of A and B
+---------------------------------------------------------------
+
+::
+
+    git diff A...B
 
 Remotes
 =======
@@ -201,6 +267,32 @@ Example::
 
     git branch experimental
 
+Change the current branch
+-------------------------
+
+::
+
+    git checkout BRANCH_NAME
+
+Example::
+
+    git checkout experimental
+
+Create a local branch and switch to it
+--------------------------------------
+
+::
+
+    git checkout -b BRANCH_NAME
+
+This is shorthand for::
+
+    git branch BRANCH_NAME
+    git checkout BRANCH_NAME
+
+Example::
+
+    git checkout -b experimental
 
 List local branches
 -------------------
@@ -250,19 +342,6 @@ For branches not merged with the current branch (dangerous)::
 Example::
 
     git branch -D experimental
-
-
-Change the current branch
--------------------------
-
-::
-
-    git checkout BRANCH_NAME
-
-Example::
-
-    git checkout experimental
-
 
 List remote branches
 --------------------
