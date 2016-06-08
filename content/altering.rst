@@ -56,9 +56,23 @@ Then you can go back to the ``DESTINATION_BRANCH_NAME`` branch and do a fast-for
     git checkout DESTINATION_BRANCH_NAME
     git merge SOURCE_BRANCH_NAME
 
-Example::
+Example:
+
+.. image:: ./images/gitdags/rebasing_1.png
+   :alt: Rebasing 1
+
+::
 
     git checkout experimental
     git rebase master
+
+.. image:: ./images/gitdags/rebasing_2.png
+   :alt: Rebasing 2
+
+::
+
     git checkout master
-    git merge experiment
+    git merge experimental
+
+.. image:: ./images/gitdags/rebasing_3.png
+   :alt: Rebasing 3
