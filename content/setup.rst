@@ -1,6 +1,21 @@
 Setup Git
 =========
 
+Configuration files
+-------------------
+
+``.git/config``
+    Repository-specific configuration settings (manipulated with the ``--file`` option of ``git config``)
+
+``~/.gitconfig``
+    User-specific configuration settings (manipulated with the ``--global`` option of ``git config``)
+
+``/etc/gitconfig``
+    System-wide configuration settings (manipulated with the ``--system`` option of ``git config``)
+
+Configuration example
+---------------------
+
 User information::
 
     git config --global user.name "Jeremie DECOCK"
@@ -30,3 +45,10 @@ Some useful aliases::
 Add a GPG key (see https://help.github.com/articles/telling-git-about-your-gpg-key/ and https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work ; for GitHub users see https://github.com/blog/2144-gpg-signature-verification)::
 
     git config --global user.signingkey PUBLIC_KEY_ID
+
+List current configuration settings
+-----------------------------------
+
+::
+
+    git config -l
