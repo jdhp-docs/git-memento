@@ -23,7 +23,7 @@ all: $(NAME).html $(NAME).pdf
 
 .PHONY : all html pdf odt pdf-latex slides jdhp publish clean init
 
-SRCFILES=document.rst Makefile
+SRCFILES=document.rst Makefile content/*.rst
 
 ## ARTICLE ####################################################################
 
