@@ -51,6 +51,8 @@ Git Memento
 
 .. include:: content/setup.rst
 
+.. include:: content/ignore.rst
+
 .. include:: content/diff.rst
 
 .. include:: content/remote.rst
@@ -60,6 +62,8 @@ Git Memento
 .. include:: content/branch.rst
 
 .. include:: content/merge.rst
+
+.. include:: content/altering.rst
 
 .. ............................................................................
 
