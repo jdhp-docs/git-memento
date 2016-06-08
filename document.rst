@@ -59,6 +59,8 @@ Git Memento
 
 .. include:: content/branch.rst
 
+.. include:: content/merge.rst
+
 .. ............................................................................
 
 .. Break the page for rst2pdf
