@@ -52,3 +52,19 @@ List current configuration settings
 ::
 
     git config -l
+
+Some advanced aliases
+---------------------
+
+Some advanced aliases are available at https://git.wiki.kernel.org/index.php/Aliases).
+
+Use graphviz for display (https://git.wiki.kernel.org/index.php/Aliases#Use_graphviz_for_display)::
+
+    [alias]
+        graphviz = "!f() { \
+            echo 'digraph git {' ; \
+            git log --pretty='format:  %h -> { %p }' \"$@\" | \
+                sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; \
+            echo '}'; \
+            }; f"
+
