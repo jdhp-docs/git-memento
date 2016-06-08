@@ -1,0 +1,28 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+
+    \begin{tikzpicture}
+
+        % Commit DAG
+        \gitDAG[grow right sep = 2em]{
+            C1 -- C2 -- C3 -- C4'
+        };
+
+        % Branch
+        \gitbranch
+            {experimental} % node name and text 
+            {below=of C4'} % node placement
+            {C4'}          % target
+
+        % Branch
+        \gitbranch
+            {master}       % node name and text 
+            {above=of C4'} % node placement
+            {C4'}          % target
+
+    \end{tikzpicture}
+
+\end{document}
