@@ -1,3 +1,8 @@
+# Compiled files
+*.pdf
+*.png
+
+# LaTeX files
 *.aux
 *.bbl
 *.blg
