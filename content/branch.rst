@@ -129,10 +129,10 @@ Example::
 .. http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely
 
 
-Get a graphical representation of all branches (local and remote branches)
---------------------------------------------------------------------------
+Get a graphical representation of all branches (local + remote)
+-----------------------------------------------------------------
 
-::
+Get a graphical representation of all branches (local and remote)::
 
     git log --oneline --decorate --graph --all
 
