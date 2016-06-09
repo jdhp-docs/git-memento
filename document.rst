@@ -53,6 +53,8 @@ Git Memento
 
 .. include:: content/ignore.rst
 
+.. include:: content/log.rst
+
 .. include:: content/diff.rst
 
 .. include:: content/remote.rst
