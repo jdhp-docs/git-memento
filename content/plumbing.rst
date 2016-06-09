@@ -79,3 +79,15 @@ Examples::
 
     git show HEAD^:README.rst > /tmp/README.rst
     git show HEAD^:content/introduction.rst > introcution.old.rst
+
+Show the type (blob, tree, commit or tag) of a git object
+---------------------------------------------------------
+
+::
+
+    git cat-file -t OBJECT_ID
+
+Examples::
+
+    git cat-file -t 33f4ea63
+    git cat-file -t HEAD
