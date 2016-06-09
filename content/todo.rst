@@ -36,17 +36,8 @@ Voc:
 Plumbing commands
 =================
 
-Show the content of a commit::
-
-    git show SHA
-
-Show the content of a file in the master (or current ???) branch::
-
-    git show :FILE
-
-Show the content of a file in the BRANCH_NAME branch::
-
-    git show BRANCH_NAME:FILE
+TODO
+----
 
 ???::
 

@@ -65,6 +65,8 @@ Git Memento
 
 .. include:: content/altering.rst
 
+.. include:: content/plumbing.rst
+
 .. ............................................................................
 
 .. Break the page for rst2pdf
