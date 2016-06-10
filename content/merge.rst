@@ -8,9 +8,18 @@ Merge a given local branch in the current branch
 
     git merge LOCAL_BRANCH_NAME
 
-Example::
+Example:
 
+.. image:: ./images/gitdags/merging_1.png
+   :alt: Merging 1
+
+::
+
+    git checkout master
     git merge experimental
+
+.. image:: ./images/gitdags/merging_2.png
+   :alt: Merging 2
 
 Merge a given remote branch in the current branch
 -------------------------------------------------
