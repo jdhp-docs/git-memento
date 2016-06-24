@@ -51,10 +51,18 @@ Prior step: Fork the upstream repository and clone the fork
 Fork the upstream repository on the GitHub website: see
 https://help.github.com/articles/fork-a-repo/#fork-an-example-repository.
 
-Clone the fork repository::
+Clone the fork repository (where
+`git@github.com:YOUR_USER_NAME/REPOSITORY_NAME.git` is the URL of *your*
+fork)::
 
-    git clone git@github.com:USER_NAME/REPOSITORY_NAME.git
+    git clone git@github.com:YOUR_USER_NAME/REPOSITORY_NAME.git
     cd REPOSITORY_NAME
+
+Define the *upstream* remote repository (where
+`https://github.com/UPSTREAM_USER_NAME/REPOSITORY_NAME.git` is the URL of the
+*original* repository)::
+
+    git remote add upstream https://github.com/UPSTREAM_USER_NAME/REPOSITORY_NAME.git
 
 Step 1: Synchronize with upstream
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
