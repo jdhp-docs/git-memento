@@ -1,24 +1,19 @@
 .. -*- coding: utf-8 -*-
 
+.. Include options:
+.. http://docutils.sourceforge.net/docs/ref/rst/directives.html#include
+
+.. include:: meta.rst
+
 ====
 TODO
 ====
 
-:Author: Jérémie Decock
-:Contact: jd.jdhp@gmail.com
-:Revision: 1
-:Date: TODO/TODO/2016
+:Author: |AUTHORS|
+:Contact: |CONTACT|
+:Revision: |REVISION|
+:Date: |DATE|
 :Licence: |CC BY-SA 4.0|_
-
-.. ............................................................................
-
-.. http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta
-
-.. meta::
-    :author: Jérémie DECOCK
-    :description: TODO
-    :keywords: TODO, TODO, TODO
-    :copyright: Copyright (c) 2016 Jérémie DECOCK
 
 .. ............................................................................
 
@@ -46,13 +41,10 @@ TODO
 
     PageBreak
 
-TITLE 1
-=======
+.. Include options:
+.. http://docutils.sourceforge.net/docs/ref/rst/directives.html#include
 
-TITLE 2
--------
-
-TODO
+.. include:: content/main.rst
 
 .. ............................................................................
 
@@ -73,13 +65,11 @@ License
 
 |CC BY-SA 4.0 image|_
 
-*TODO*
-written by `Jérémie Decock`_
-is provided under the terms and conditions of the |CC BY-SA 4.0|_ license.
+This document written by `Jérémie Decock`_ is provided under the terms and
+conditions of the |CC BY-SA 4.0|_ license.
 
 .. ............................................................................
 
-.. _TODO: http://www.jdhp.org/tutorials_TODO.html#TODO
 .. _Jérémie Decock: http://www.jdhp.org/
 
 .. |CC BY-SA 4.0| replace:: Creative Commons 4.0 (CC BY-SA 4.0)
