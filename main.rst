@@ -49,27 +49,7 @@ Git Memento
 .. Include options:
 .. http://docutils.sourceforge.net/docs/ref/rst/directives.html#include
 
-.. include:: content/setup.rst
-
-.. include:: content/ignore.rst
-
-.. include:: content/log.rst
-
-.. include:: content/diff.rst
-
-.. include:: content/remote.rst
-
-.. include:: content/tag.rst
-
-.. include:: content/branch.rst
-
-.. include:: content/merge.rst
-
-.. include:: content/altering.rst
-
-.. include:: content/plumbing.rst
-
-.. include:: content/github_workflow.rst
+.. include:: content/main.rst
 
 .. ............................................................................
 
