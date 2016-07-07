@@ -11,6 +11,7 @@
 - [ ] Make the HTML document compliant with mobile devices (see Google's advices)
 - [ ] Improve the PDF theme
 - [ ] Add the right meta in PDF: author, language, subject, keywords, ...
+- [ ] CSS example: https://www.mnot.net/cache_docs/
 
 ## Document
 
