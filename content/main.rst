@@ -9,6 +9,8 @@
 
 .. include:: diff.rst
 
+.. include:: patches.rst
+
 .. include:: remote.rst
 
 .. include:: tag.rst
