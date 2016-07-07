@@ -6,6 +6,15 @@ Warning
 
 Do not alter commits that have been shared with other users (e.g. pushed, pulled or cloned) !
 
+Amending the most recent commit message
+---------------------------------------
+
+::
+
+    git commit --amend -m "New commit message"
+
+.. src: http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git
+
 .. TODO
 
 Revert *HEAD* to a known commit
