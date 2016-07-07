@@ -1,10 +1,8 @@
-.. include:: meta.rst
-
 ====
 `TODO`_
 ====
 
-Copyright (c) 2016 |AUTHORS| (http://www.jdhp.org)
+Copyright (c) 2016 Jeremie DECOCK (http://www.jdhp.org)
 
 * Web site: http://www.jdhp.org/tutorials_TODO.html#TODO
 * Source code: https://github.com/jdhp-docs/TODO
