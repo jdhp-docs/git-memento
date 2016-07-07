@@ -47,6 +47,8 @@ Apply a patch (without commit metadata)
 
     git apply FILE_NAME
 
+This command applies the patch but does not create a commit.
+
 Example::
 
     git apply foo.patch
@@ -72,6 +74,8 @@ Apply a patch (with commit metadata)
 ::
 
     git am ... TODO
+
+This command applies the patch and make commits.
 
 Example::
 
