@@ -166,3 +166,16 @@ or simply::
 
 TODO: add an image
 
+Step 7: (Optional) remove the working branches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Remove the remote working branch of your fork on Github::
+
+    git push origin --delete experimental
+
+or simply delete the branch from the github interface.
+
+Then remove the local working branch::
+
+    git branch -d experimental
+
