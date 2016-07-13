@@ -71,7 +71,13 @@ Get the details of unresolved conflicts::
 Solve conflicts manually (if there are any)
 -------------------------------------------
 
-Once you have edited the files to resolve the conflict::
+Get the list of files with unresolved conflicts::
+
+    git status
+
+Edit these files to solve conflicts.
+
+Once you have solve conflicts, stage edited files::
 
     git add FILE_NAME1 [FILE_NAME2 ...]
 
