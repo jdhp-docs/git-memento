@@ -60,7 +60,7 @@ when there are conflicts)::
 Show conflicts (if there are any)
 ---------------------------------
 
-Get the list of files with unresolved conflicts::
+Get the list of files with unresolved conflicts after a ``git merge`` or ``git pull``::
 
     git status
 
@@ -68,10 +68,10 @@ Get the details of unresolved conflicts::
 
     git diff
 
-Solve conflicts manually (if there are any)
--------------------------------------------
+Solve conflicts manually
+------------------------
 
-Get the list of files with unresolved conflicts::
+Get the list of files with unresolved conflicts after a ``git merge`` or ``git pull``::
 
     git status
 
@@ -81,7 +81,9 @@ Once you have solve conflicts, stage edited files::
 
     git add FILE_NAME1 [FILE_NAME2 ...]
 
-Then check all conflicts are solved::
+Staged files are considered resolved.
+
+Then check that all conflicts are solved::
 
     git status
 
@@ -91,6 +93,86 @@ Finally make the merge commit::
 
 It's recommended to keep the default commit message.
 
+Solve conflicts with graphical tools
+------------------------------------
+
+Git support many *graphical diff tools* out of the box to resolve merge
+conflicts, including *opendiff*, *kdiff3*, *tkdiff*, *xxdiff*, *meld*,
+*kompare*, *gvimdiff*, *diffuse*, *diffmerge*, *ecmerge*, *p4merge*, *araxis*,
+*bc*, *codecompare*, *vimdiff* and *emerge* (the default one is *opendiff*).
+
+To select which tool to use::
+
+    git config [--global] merge.tool TOOL_NAME
+
+For instance::
+
+    git config --global merge.tool meld
+
+To resolve conflicts with the selected graphical tool after a ``git merge`` or ``git pull``::
+
+    git mergetool [FILE_NAME1, ...]
+
+.. This will open specified files (or all files) with an unresolved conflict.
+
+
+Specifying a directory will include all unresolved files in that path. If no
+``FILE_NAME`` are specified, ``git mergetool`` will run the merge tool program on
+every file with merge conflicts.
+
+
+If you use the ``meld`` tool (probably the most popular one), update and save
+the **middle pane** only (the one called either *BASE* or *MERGED*).
+With ``meld``,
+the left pane (named *LOCAL*) shows the contents of the file on the current
+branch (e.g. ``master`` in section `Merge a given local branch in the current branch`_)
+and the right pane (named *REMOTE*) show the contents of the file on the branch
+being merged (e.g. ``experimental`` in section `Merge a given local branch in the current branch`_).
+See
+`this page <http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool>`_
+for more information.
+
+
+If, while you are editing the merge conflicts in your selected mergetool,
+you wish to cancel changes, then quit your graphical tool without saving
+anything.
+
+
+.. TODO comment faire pour annuler les modifs: ne pas enregistrer le pane du milieu...
+
+.. TODO comment faire si on a accidentellement enregistré le fichier dans le merge tool mais qu'on veut finalement faire un abort sur ce fichier sanf faire un git merge --abort (qui annulerait les modifs sur TOUS les fichiers) ? Remplacer le fichier modifié par le .orig ne marche + git reset pas.
+
+.. TODO comment configurer MERGED ou BASE dans le panneau du milieu : cf. http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool : écrire ça dans une nouvelle sous section "Advanced git mergetool setup"
+
+.. TODO gestion des espaces et des caractères de fin de ligne : cf. http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool : écrire ça dans une nouvelle sous section "Advanced git mergetool setup"
+
+.. TODO faire une section similaire pour ``git difftool``
+
+
+A ``.orig`` file is created for each edited file.
+These are safe to remove once a file has been merged.
+Setting the ``mergetool.keepBackup`` configuration variable to ``false`` causes
+``git mergetool`` to automatically remove the backup as files are successfully
+merged.
+
+
+Once you have solve conflicts, edited files are automatically staged.
+Check that all conflicts are solved with::
+
+    git status
+
+Check the differences with the former "*LOCAL*" branch::
+
+    git diff --cached
+
+Finally make the merge commit::
+
+    git commit
+
+It's recommended to keep the default commit message.
+
+
+See https://git-scm.com/docs/git-mergetool for more information.
 
 TODO...
 -------
