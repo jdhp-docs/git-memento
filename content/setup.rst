@@ -93,3 +93,36 @@ startup file (e.g. ``~/.bashrc``)::
     git_completion_path=/usr/share/git-core/git-completion.bash
     [ -r ${git_completion_path} ] && source ${git_completion_path}
 
+.. See also https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+
+Show the current branch in the shell prompt
+-------------------------------------------
+
+Git contains a script to show the current branch in the shell prompt
+(``git-prompt.sh``).
+
+Usually this file is already installed in the "git-core" directory of your
+git installation.
+
+In case, you can find it with the following command::
+
+    find / -type f -name "git-prompt.sh" 2> /dev/null
+
+or you can download it at https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+
+
+Let's say you use Bash (otherwise adapt the following lines to your case).
+To activate git information in prompt, simply add the following lines at the
+end of your shell startup file (e.g. ``~/.bashrc``)::
+
+    # Define prompt for Git
+    git_prompt_path=/usr/share/git-core/git-prompt.sh
+    [ -r ${git_prompt_path} ] && source ${git_prompt_path}
+    
+    # Define the prompt shell
+    PS1='\u@\h:\w`__git_ps1 " (%s)"`\$ '
+
+or if you want a bit of color, replace the last line by::
+
+    PS1='\u@\h:\w\[\033[31;1m\]`__git_ps1 " (%s)"`\[\033[0m\]\$ '
+
