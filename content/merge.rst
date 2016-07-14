@@ -109,7 +109,8 @@ For instance::
 
     git config --global merge.tool meld
 
-To resolve conflicts with the selected graphical tool after a ``git merge`` or ``git pull``::
+To resolve conflicts with the selected graphical tool after a ``git merge`` or
+``git pull``::
 
     git mergetool [FILE_NAME1, ...]
 
@@ -117,17 +118,18 @@ To resolve conflicts with the selected graphical tool after a ``git merge`` or `
 
 
 Specifying a directory will include all unresolved files in that path. If no
-``FILE_NAME`` are specified, ``git mergetool`` will run the merge tool program on
-every file with merge conflicts.
+``FILE_NAME`` is specified, ``git mergetool`` will run the merge tool program
+on every file with merge conflicts.
 
 
-If you use the ``meld`` tool (probably the most popular one), update and save
-the **middle pane** only (the one called either *BASE* or *MERGED*).
-With ``meld``,
-the left pane (named *LOCAL*) shows the contents of the file on the current
-branch (e.g. ``master`` in section `Merge a given local branch in the current branch`_)
-and the right pane (named *REMOTE*) show the contents of the file on the branch
-being merged (e.g. ``experimental`` in section `Merge a given local branch in the current branch`_).
+If you use ``meld`` as ``merge.tool`` (probably the most popular mergetool),
+then update and save the **middle pane** only (the one called either *BASE* or
+*MERGED*).
+With ``meld``, the left pane (named *LOCAL*) shows the contents of the file on
+the current branch (e.g. ``master`` in section `Merge a given local branch in
+the current branch`_) and the right pane (named *REMOTE*) show the contents of
+the file on the branch being merged (e.g. ``experimental`` in section `Merge a
+given local branch in the current branch`_).
 See
 `this page <http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool>`_
 for more information.
