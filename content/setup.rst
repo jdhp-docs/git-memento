@@ -68,3 +68,28 @@ Use graphviz for display (https://git.wiki.kernel.org/index.php/Aliases#Use_grap
             echo '}'; \
             }; f"
 
+Get tab completion of branches, tags, subcommands, ...
+------------------------------------------------------
+
+Git contains a set of completion scripts for *bash* (``git-completion.bash``),
+*tcsh* (``git-completion.tcsh``) and *zsh* (``git-completion.zsh``).
+
+Usually these files are already installed in the "git-core" directory of your
+git installation.
+
+In case, you can find them with the following command::
+
+    find / -type f -name "git-completion.*" 2> /dev/null
+
+or you can download them at https://github.com/git/git/tree/master/contrib/completion
+
+
+Let's say you use Bash and your completion script is in
+``/usr/share/git-core/`` (adapt the following lines to your case), then to
+activate git completion, simply add the following lines to your shell
+startup file (e.g. ``~/.bashrc``)::
+
+    # Define completion for Git
+    git_completion_path=/usr/share/git-core/git-completion.bash
+    [ -r ${git_completion_path} ] && source ${git_completion_path}
+
