@@ -62,6 +62,10 @@ names like "-f".
 Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
 directory. Paths relative to the root of the repository won't work.
 
+To compare a git object ``A`` to ``HEAD``, simply use::
+
+    git diff A
+
 Example::
 
     git diff ff20b..ea76d ./src/main.c
@@ -82,10 +86,10 @@ or::
 
     git diff COMMIT1..COMMIT2
 
-where ``COMMIT1`` is supposed to be older than ``COMMIT2`` as what is shown is
-the modification applied to go from ``COMMIT1`` to ``COMMIT2``.
-If you reverse the order of ``COMMIT1`` and ``COMMIT2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+.. where ``COMMIT1`` is supposed to be older than ``COMMIT2`` as what is shown is
+.. the modification applied to go from ``COMMIT1`` to ``COMMIT2``.
+.. If you reverse the order of ``COMMIT1`` and ``COMMIT2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
 
 Examples::
 
@@ -112,17 +116,19 @@ or::
     git diff COMMIT1..COMMIT2 -- FILENAME1 [FILENAME2 ...]
 
 where ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths
-and where ``COMMIT1`` is supposed to be older than ``COMMIT2``.
-Note what is shown is the modification applied to go from ``COMMIT1`` to
-``COMMIT2``.
-If you reverse the order of ``COMMIT1`` and ``COMMIT2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+relative to the current working directory.
 
-The ``--`` notation is only required the files you want to compare have strange
-names like "-f".
-
-Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
-directory. Paths relative to the root of the repository won't work.
+.. and where ``COMMIT1`` is supposed to be older than ``COMMIT2``.
+.. Note what is shown is the modification applied to go from ``COMMIT1`` to
+.. ``COMMIT2``.
+.. If you reverse the order of ``COMMIT1`` and ``COMMIT2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
+.. 
+.. The ``--`` notation is only required the files you want to compare have strange
+.. names like "-f".
+.. 
+.. Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
+.. directory. Paths relative to the root of the repository won't work.
 
 Examples::
 
@@ -145,10 +151,10 @@ or::
 
     git diff TAGNAME1..TAGNAME2
 
-where ``TAGNAME1`` is supposed to be older than ``TAGNAME2`` as what is shown is
-the modification applied to go from ``TAGNAME1`` to ``TAGNAME2``.
-If you reverse the order of ``TAGNAME1`` and ``TAGNAME2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+.. where ``TAGNAME1`` is supposed to be older than ``TAGNAME2`` as what is shown is
+.. the modification applied to go from ``TAGNAME1`` to ``TAGNAME2``.
+.. If you reverse the order of ``TAGNAME1`` and ``TAGNAME2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
 
 Examples::
 
@@ -177,17 +183,20 @@ or::
     git diff TAGNAME1..TAGNAME2 -- FILENAME1 [FILENAME2 ...]
 
 where ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths
-and where ``TAGNAME1`` is supposed to be older than ``TAGNAME2``.
-Note that what is shown is the modification applied to go from ``TAGNAME1`` to
-``TAGNAME2``.
-If you reverse the order of ``TAGNAME1`` and ``TAGNAME2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+relative to the current working directory.
 
-The ``--`` notation is only required the files you want to compare have strange
-names like "-f".
-
-Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
-directory. Paths relative to the root of the repository won't work.
+.. where ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths
+.. and where ``TAGNAME1`` is supposed to be older than ``TAGNAME2``.
+.. Note that what is shown is the modification applied to go from ``TAGNAME1`` to
+.. ``TAGNAME2``.
+.. If you reverse the order of ``TAGNAME1`` and ``TAGNAME2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
+.. 
+.. The ``--`` notation is only required the files you want to compare have strange
+.. names like "-f".
+.. 
+.. Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
+.. directory. Paths relative to the root of the repository won't work.
 
 Examples::
 
@@ -218,14 +227,10 @@ or::
 
     git diff [REMOTENAME1/]BRANCH1..[REMOTENAME2/]BRANCH2
 
-or to compare a branch to the current one::
-
-    git diff BRANCH
-
-Again, ``BRANCH1`` is supposed to be "older" than ``BRANCH2`` as what is shown is
-the modification applied to go from ``BRANCH1`` to ``BRANCH2``.
-If you reverse the order of ``BRANCH1`` and ``BRANCH2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+.. Again, ``BRANCH1`` is supposed to be "older" than ``BRANCH2`` as what is shown is
+.. the modification applied to go from ``BRANCH1`` to ``BRANCH2``.
+.. If you reverse the order of ``BRANCH1`` and ``BRANCH2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
 
 Examples::
 
@@ -270,18 +275,21 @@ or::
 
     git diff [REMOTENAME1/]BRANCH1..[REMOTENAME2/]BRANCH2 -- FILENAME1 [FILENAME2 ...]
 
-Note that ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths.
-Again ``BRANCH1`` is supposed to be older than ``BRANCH2``.
-Note what is shown is the modification applied to go from ``BRANCH1`` to
-``BRANCH2``.
-If you reverse the order of ``BRANCH1`` and ``BRANCH2``, addition lines (``+``)
-will become deletion lines (``-``) and vice versa.
+where ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths
+relative to the current working directory.
 
-The ``--`` notation is only required the files you want to compare have strange
-names like "-f".
-
-Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
-directory. Paths relative to the root of the repository won't work.
+.. Note that ``FILENAME1``, ``FILENAME2``, ... are file paths or directory paths.
+.. Again ``BRANCH1`` is supposed to be older than ``BRANCH2``.
+.. Note what is shown is the modification applied to go from ``BRANCH1`` to
+.. ``BRANCH2``.
+.. If you reverse the order of ``BRANCH1`` and ``BRANCH2``, addition lines (``+``)
+.. will become deletion lines (``-``) and vice versa.
+.. 
+.. The ``--`` notation is only required the files you want to compare have strange
+.. names like "-f".
+.. 
+.. Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to the current working
+.. directory. Paths relative to the root of the repository won't work.
 
 Examples::
 
