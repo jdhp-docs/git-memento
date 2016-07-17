@@ -96,7 +96,7 @@ It's recommended to keep the default commit message.
 Solve conflicts with graphical tools
 ------------------------------------
 
-Git support many *graphical diff tools* out of the box to resolve merge
+Git support many *external diff tools* out of the box to resolve merge
 conflicts, including *opendiff*, *kdiff3*, *tkdiff*, *xxdiff*, *meld*,
 *kompare*, *gvimdiff*, *diffuse*, *diffmerge*, *ecmerge*, *p4merge*, *araxis*,
 *bc*, *codecompare*, *vimdiff* and *emerge* (the default one is *opendiff*).
@@ -147,9 +147,6 @@ anything.
 .. TODO comment configurer MERGED ou BASE dans le panneau du milieu : cf. http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool : écrire ça dans une nouvelle sous section "Advanced git mergetool setup"
 
 .. TODO gestion des espaces et des caractères de fin de ligne : cf. http://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool : écrire ça dans une nouvelle sous section "Advanced git mergetool setup"
-
-.. TODO faire une section similaire pour ``git difftool``
-
 
 A ``.orig`` file is created for each edited file.
 These are safe to remove once a file has been merged.
