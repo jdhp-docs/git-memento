@@ -383,6 +383,8 @@ You can make changes and save them from your external diff tool but only
 changes concerning the current working directory (``HEAD``) will be actually
 saved.
 
+.. See also http://stackoverflow.com/questions/21369588/git-changes-made-in-meld-as-the-difftool-not-saved
+
 Examples::
 
     git difftool -d ff20b ea76d ./src/main.c
