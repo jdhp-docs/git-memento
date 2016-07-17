@@ -73,10 +73,8 @@ Get tab completion of branches, tags, subcommands, ...
 
 Git contains a set of completion scripts for *bash* (``git-completion.bash``),
 *tcsh* (``git-completion.tcsh``) and *zsh* (``git-completion.zsh``).
-
 Usually these files are already installed in the "git-core" directory of your
 git installation.
-
 In case, you can find them with the following command::
 
     find / -type f -name "git-completion.*" 2> /dev/null
@@ -100,10 +98,8 @@ Show the current branch in the shell prompt
 
 Git contains a script to show the current branch in the shell prompt
 (``git-prompt.sh``).
-
 Usually this file is already installed in the "git-core" directory of your
 git installation.
-
 In case, you can find it with the following command::
 
     find / -type f -name "git-prompt.sh" 2> /dev/null
