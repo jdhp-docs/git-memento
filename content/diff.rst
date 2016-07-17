@@ -57,8 +57,8 @@ or::
 to get differences from ``A`` to ``B`` for specific files or directories
 ``FILENAME1``, ``FILENAME2``, ...
 
-The ``--`` notation is only required the files you want to compare have strange
-names like "-f".
+The ``--`` notation is only required the files you want to compare have contentious
+name (like "-f").
 
 Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to
 the current working directory. Paths relative to the root of the repository
@@ -368,8 +368,8 @@ or::
 to get differences from ``A`` to ``B`` for specific files or directories
 ``FILENAME1``, ``FILENAME2``, ...
 
-The ``--`` notation is only required the files you want to compare have strange
-names like "-f".
+The ``--`` notation is only required the files you want to compare have contentious
+name (like "-f").
 
 Also note that ``FILENAME1``, ``FILENAME2``, ... have to be paths relative to
 the current working directory. Paths relative to the root of the repository
@@ -383,7 +383,7 @@ You can make changes and save them from your external diff tool but only
 changes concerning the current working directory (``HEAD``) will be actually
 saved.
 
-.. See also http://stackoverflow.com/questions/21369588/git-changes-made-in-meld-as-the-difftool-not-saved
+.. See also http://stackoverflow.com/questions/21369590/git-changes-made-in-meld-as-the-difftool-not-saved
 
 Examples::
 
