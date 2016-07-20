@@ -171,7 +171,33 @@ Finally make the merge commit::
 It's recommended to keep the default commit message.
 
 
+Good to know: ``git mergetool`` has no equivalant option to
+``git difftool --dif-diff`` (i.e. it cannot open all conflicted files
+simultaneously and perform a *directory diff*).
+
+
 See https://git-scm.com/docs/git-mergetool for more information.
+
+Abort a merge for some files only
+---------------------------------
+
+.. TODO: improve the title...
+
+Typing::
+
+    git merge --abort
+
+in the middle of a merge conflict resolution would reset all files.
+To reset only one given file, use this command instead::
+
+    git checkout -m FILENAME
+
+If ``FILENAME`` has been migrated into the index by error, then it can be
+solved again with::
+
+    git mergetool FILE_NAME
+
+See: http://stackoverflow.com/questions/6857082/redo-merge-of-just-a-single-file
 
 TODO...
 -------
