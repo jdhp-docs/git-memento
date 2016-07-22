@@ -27,6 +27,10 @@ h1.title {
     text-align: center;
 }
 
+h2.subtitle {
+    text-align: center;
+}
+
 /* Table Of Contents */
 
 p.topic-title.first {

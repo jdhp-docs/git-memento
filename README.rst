@@ -1,6 +1,6 @@
-====
-`Git Memento`_
-====
+===========
+Git Memento
+===========
 
 Copyright (c) 2016 Jeremie DECOCK (http://www.jdhp.org)
 
@@ -13,13 +13,13 @@ Description
 
 This repository contains the source files of the following document written by
 *Jérémie Decock* in June 2016:
-*Git Memento*.
+`Git Memento`_.
 
 License
 =======
 
-`Git Memento`_
-is provided under the terms and conditions of the `CC BY-SA 4.0 license`_.
+This document is provided under the terms and conditions of the
+`CC BY-SA 4.0 license`_.
 
 .. ............................................................................
 
