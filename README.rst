@@ -1,5 +1,5 @@
 ====
-`TODO`_
+TODO
 ====
 
 Copyright (c) 2016 Jeremie DECOCK (http://www.jdhp.org)
@@ -13,13 +13,13 @@ Description
 
 This repository contains the source files of the following document written by
 *Jérémie Decock* in TODO 2016:
-*TODO*.
+`TODO`_.
 
 License
 =======
 
-`TODO`_
-is provided under the terms and conditions of the `CC BY-SA 4.0 license`_.
+This document is provided under the terms and conditions of the
+`CC BY-SA 4.0 license`_.
 
 .. ............................................................................
 
