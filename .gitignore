@@ -1,5 +1,21 @@
+# RestructuredText generated files ############################################
+
 *.html
 *.pdf
 *.odt
 ui/
 html_tmp/
+
+# COMMON ######################################################################
+
+# Vim swap files
+*.swp
+
+# Emacs temporary files
+*~
+
+# MacOSX Thumbnail files
+.DS_Store
+
+# Windows Thumbnail files
+Thumbs.db
