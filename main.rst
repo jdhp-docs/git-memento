@@ -1,24 +1,19 @@
 .. -*- coding: utf-8 -*-
 
+.. Include options:
+.. http://docutils.sourceforge.net/docs/ref/rst/directives.html#include
+
+.. include:: meta.rst
+
 ===========
 Git Memento
 ===========
 
-:Author: Jérémie Decock
-:Contact: jd.jdhp@gmail.com
-:Revision: 0.1
-:Date: 20/05/2016
+:Author: |AUTHORS|
+:Contact: |CONTACT|
+:Revision: |REVISION|
+:Date: |DATE|
 :Licence: |CC BY-SA 4.0|_
-
-.. ............................................................................
-
-.. http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta
-
-.. meta::
-    :author: Jérémie DECOCK
-    :description: A git memento
-    :keywords: git, github
-    :copyright: Copyright (c) 2016 Jérémie DECOCK
 
 .. ............................................................................
 
