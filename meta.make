@@ -1,4 +1,4 @@
-NAME=git_memento
+FILE_BASE_NAME=git_memento
 
 # rst2html options ############################################################
 

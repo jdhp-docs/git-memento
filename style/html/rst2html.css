@@ -5,7 +5,10 @@ body {
     color: #333;
 
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
+
+    line-height: 1.5em;
 
     margin-top: 1em;
     margin-bottom: 1em;
@@ -75,11 +78,15 @@ table.docinfo tr {
 h1, p.topic-title.first {
     font-size: 200%;
     font-weight: bold;
+
+    margin-top: 1.5em;
 }
 
 h2 {
     font-size: 150%;
     font-weight: bold;
+
+    margin-top: 1.5em;
 }
 
 h1 a, h2 a, h3 a {
@@ -142,4 +149,10 @@ table tr:nth-child(2n) {
 td, th {
     border: 1px solid #ddd;
     padding: 6px 13px;
+}
+
+/* rst2html messages (errors, warnings, ...) */
+
+div.system-message, div.system-message * {
+    background: #ff8080;
 }
