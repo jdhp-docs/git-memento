@@ -105,8 +105,8 @@ In case, you can find it with the following command::
     find / -type f -name "git-prompt.sh" 2> /dev/null
 
 or you can download it at https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
-(note for *Debian 8* users: the script has been renamed ``git-sh-prompt`` and
-is provided by the ``git`` package in ``/usr/lib/git-core/``).
+(note for *Debian8* users: the script is provided by the ``git`` package in
+``/usr/lib/git-core/`` and has been renamed ``git-sh-prompt``).
 
 Let's say you use Bash (otherwise adapt the following lines to your case).
 To activate git information in prompt, simply add the following lines at the
