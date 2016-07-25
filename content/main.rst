@@ -19,6 +19,8 @@
 
 .. include:: merge.rst
 
+.. include:: submodule.rst
+
 .. include:: altering.rst
 
 .. include:: plumbing.rst
