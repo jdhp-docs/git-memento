@@ -26,3 +26,7 @@
 .. include:: plumbing.rst
 
 .. include:: github_workflow.rst
+
+.. include:: svn.rst
+
+.. include:: mediawiki.rst
