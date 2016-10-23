@@ -25,6 +25,8 @@ where the optional argument ``SUBMODULE_PATH`` is the relative location for the
 cloned submodule to exist in the *superproject*.
 ``SUBMODULE_PATH`` is also used as the submodule's logical name in its
 configuration entries (unless --name is used to specify a logical name).
+For GitHub users, ``SUBMODULE_REPOSITORY_URL`` should be an HTTPS URL (i.e.
+not an SSH one) to grant everyone access to *submodule* within *superproject*.
 
 The ``git submodule add`` command creates the following files in the working
 tree and the index::
