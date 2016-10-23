@@ -13,6 +13,8 @@ about *submodules*.
 Add a *submodule* to a *superproject*
 -------------------------------------
 
+.. TODO: reverifier tout ce qui est ecrit
+
 From *superproject* (i.e. from the repository where you want to insert the
 *submodule*)::
 
@@ -24,8 +26,22 @@ cloned submodule to exist in the *superproject*.
 ``SUBMODULE_PATH`` is also used as the submodule's logical name in its
 configuration entries (unless --name is used to specify a logical name).
 
+The ``git submodule add`` command creates the following files in the working
+tree and the index::
+
+    .gitmodules
+    SUBMODULE_PATH
+
+where ``SUBMODULE_PATH`` is a *git link* to the *submodule* repository.
+The ``git commit`` command add these two files to the *superproject*
+repository.
+Thanks to this commit, users who clone the *superproject* can easily fetch the
+*submodule* (see the next subsection).
+
 Clone a repository containing submodules (additional steps after cloning)
 -------------------------------------------------------------------------
+
+.. TODO: reverifier tout ce qui est ecrit
 
 If a project contains submodules, here are the additional steps you should
 execute after cloning this project::
