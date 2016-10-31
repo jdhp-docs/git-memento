@@ -105,7 +105,7 @@ Update a given submodule in a *superproject*
 .. répercuter les modifications de "submodule" dans "main"
 
 When a *submodule* repository is updated, the *superproject* doesn't
-automatically follow the last changes ; the reason is you may want to stick to a
+automatically follow these changes ; the reason is you may want to stick to a
 particular approved version of the *submodule*. Thus updates have to be made
 explicitly.
 
