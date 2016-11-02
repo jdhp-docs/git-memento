@@ -70,10 +70,10 @@ sed -i "" \
 DOCUMENT_TITLE_UNDERLINE=$(echo "${TODO_DOCUMENT_TITLE}" | tr '[:print:]' '=')
 
 sed -i "" \
-    -e "s/====/${DOCUMENT_TITLE_UNDERLINE}/" \
+    -e "s/^====$/${DOCUMENT_TITLE_UNDERLINE}/" \
     README.rst
 
 sed -i "" \
-    -e "s/====/${DOCUMENT_TITLE_UNDERLINE}/" \
+    -e "s/^====$/${DOCUMENT_TITLE_UNDERLINE}/" \
     main.rst
 
