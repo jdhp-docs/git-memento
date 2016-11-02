@@ -15,9 +15,9 @@ SRCFILES=Makefile main.rst content/*.rst
 html: $(FILE_BASE_NAME).html
 
 $(FILE_BASE_NAME).html: $(SRCFILES)
-	rst2html --title=$(TITLE) --date --time --generator \
+	rst2html --title="$(TITLE)" --date --time --generator \
 		--language=$(LANGUAGE) --tab-width=4 --math-output=$(MATH_OUTPUT) \
-		--source-url=$(SOURCE_URL) --stylesheet=$(HTML_STYLESHEET) \
+		--source-url="$(SOURCE_URL)" --stylesheet=$(HTML_STYLESHEET) \
 		--section-numbering --embed-stylesheet --strip-comments \
 		main.rst $@
 
