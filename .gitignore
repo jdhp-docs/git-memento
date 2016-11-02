@@ -4,7 +4,7 @@
 *.pdf
 *.odt
 ui/
-html_tmp/
+TODO_HTML_TMP_DIR/
 
 # COMMON ######################################################################
 
@@ -19,3 +19,6 @@ html_tmp/
 
 # Windows Thumbnail files
 Thumbs.db
+
+# Windows Directory parameters
+Desktop.ini

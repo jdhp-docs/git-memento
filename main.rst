@@ -6,14 +6,14 @@
 .. include:: meta.rst
 
 ====
-TODO
+TODO_DOCUMENT_TITLE
 ====
 
 :Author: |AUTHORS|
 :Contact: |CONTACT|
 :Revision: |REVISION|
 :Date: |DATE|
-:Licence: |CC BY-SA 4.0|_
+:License: |CC BY-SA 4.0|_
 
 .. ............................................................................
 
@@ -65,12 +65,10 @@ License
 
 |CC BY-SA 4.0 image|_
 
-This document written by `Jérémie Decock`_ is provided under the terms and
-conditions of the |CC BY-SA 4.0|_ license.
+This document is provided under the terms and conditions of the |CC BY-SA 4.0|_
+license.
 
 .. ............................................................................
-
-.. _Jérémie Decock: http://www.jdhp.org/
 
 .. |CC BY-SA 4.0| replace:: Creative Commons 4.0 (CC BY-SA 4.0)
 .. _CC BY-SA 4.0: http://creativecommons.org/licenses/by-sa/4.0/

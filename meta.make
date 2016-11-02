@@ -1,18 +1,12 @@
-FILE_BASE_NAME=TODO
+FILE_BASE_NAME=TODO_DOCUMENT_FILE_BASE_NAME
 
 # rst2html options ############################################################
 
 # See man rst2html for more information
 
-TITLE="TODO"
-
+TITLE=TODO_DOCUMENT_TITLE
 LANGUAGE=en
-#LANGUAGE=fr
-
 MATH_OUTPUT="MathJax"
-
-SOURCE_URL="https://github.com/jdhp-docs/TODO"
-
+SOURCE_URL=TODO_DOCUMENT_GITHUB_URL
 HTML_STYLESHEET="style/html/rst2html.css"
-
-HTML_TMP_DIR="html_tmp"
+HTML_TMP_DIR=TODO_HTML_TMP_DIR
