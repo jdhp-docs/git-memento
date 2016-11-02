@@ -14,6 +14,7 @@
     - [ ] Is rst2pdf dead ? No python3 support... see
           https://github.com/rst2pdf/rst2pdf and
           https://github.com/aquavitae/rst2pdf-py3-dev
+          Thus use pandoc instead (through LaTeX) ?
 - [ ] The pdf-latex target in the Makefile should produce a .pdf file, not a
       .latex.pdf file! This implies a variable should be added
       ("USE_PDF_LATEX") and tested in the .pdf target...
