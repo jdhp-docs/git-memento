@@ -36,6 +36,9 @@ git remote rename origin skeleton
 git remote add origin git@github.com:${TODO_DOCUMENT_GITHUB_ACCOUNT}/${TODO_DOCUMENT_GITHUB_REPOSITORY_NAME}.git
 git push -u origin english-version              # TODO
 
+git submodule init
+git submodule update
+
 
 # MAKE SUBSTITUTIONS ##########################################################
 
