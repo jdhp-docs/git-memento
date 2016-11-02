@@ -73,5 +73,5 @@ license.
 .. |CC BY-SA 4.0| replace:: Creative Commons 4.0 (CC BY-SA 4.0)
 .. _CC BY-SA 4.0: http://creativecommons.org/licenses/by-sa/4.0/
 
-.. |CC BY-SA 4.0 image| image:: ./images/cc_by_sa_80x15.png
+.. |CC BY-SA 4.0 image| image:: ./images/logos/cc/cc_by_sa_80x15.png
 .. _CC BY-SA 4.0 image: http://creativecommons.org/licenses/by-sa/4.0/
