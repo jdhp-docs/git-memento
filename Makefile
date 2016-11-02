@@ -58,6 +58,11 @@ $(FILE_BASE_NAME)_slides.html: $(SRCFILES)
 publish: jdhp
 
 jdhp:$(FILE_BASE_NAME).pdf $(FILE_BASE_NAME).html
+	
+	########
+	# HTML #
+	########
+	
 	# JDHP_DOCS_URI is a shell environment variable that contains the
 	# destination URI of the HTML files.
 	@if test -z $$JDHP_DOCS_URI ; then exit 1 ; fi
@@ -70,6 +75,10 @@ jdhp:$(FILE_BASE_NAME).pdf $(FILE_BASE_NAME).html
 
 	# Upload the HTML files
 	rsync -r -v -e ssh $(HTML_TMP_DIR)/ ${JDHP_DOCS_URI}/$(FILE_BASE_NAME)/
+	
+	#######
+	# PDF #
+	#######
 	
 	# JDHP_DL_URI is a shell environment variable that contains the destination
 	# URI of the PDF files.
@@ -92,5 +101,5 @@ init: clean
 	@rm -vf $(FILE_BASE_NAME).odt
 	@rm -vf $(FILE_BASE_NAME).latex
 	@rm -vf $(FILE_BASE_NAME)_slides.html
-	@rm -rf $(HTML_TMP_DIR)/
+	@rm -rvf $(HTML_TMP_DIR)/
 
