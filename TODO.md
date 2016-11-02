@@ -17,6 +17,12 @@
           Thus use pandoc instead (through LaTeX) ?
 - [ ] The pdf-latex target doesn't work well: the "include" directive is
       ignored (see https://github.com/jgm/pandoc/issues/223)
+      Thus use "rst2latex-3.5.py main.rst tmp.latex & pdflatex tmp.latex"
+      instead ?
+- [ ] Add a LaTeX target in the Makefile (use rst2latex from docutils)
+      (see https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/tools/)
+- [ ] Use rst2html5 instead rst2html ?
+      (see https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/tools/)
 - [ ] The pdf-latex target in the Makefile should produce a .pdf file, not a
       .latex.pdf file! This implies a variable should be added
       ("USE_PDF_LATEX") and tested in the .pdf target...
