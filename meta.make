@@ -4,15 +4,9 @@ FILE_BASE_NAME=git_memento
 
 # See man rst2html for more information
 
-TITLE="Git Memento"
-
+TITLE=Git Memento
 LANGUAGE=en
-#LANGUAGE=fr
-
-MATH_OUTPUT="MathJax"
-
-SOURCE_URL="https://github.com/jdhp-docs/git-memento"
-
-HTML_STYLESHEET="style/html/rst2html.css"
-
-HTML_TMP_DIR="html_tmp"
+MATH_OUTPUT=MathJax
+SOURCE_URL=https://github.com/jdhp-docs/git-memento
+HTML_STYLESHEET=style/html/rst2html.css
+HTML_TMP_DIR=html_tmp
