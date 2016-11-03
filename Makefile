@@ -71,7 +71,7 @@ jdhp:$(FILE_BASE_NAME).pdf $(FILE_BASE_NAME).html
 	@rm -rf $(HTML_TMP_DIR)/
 	@mkdir $(HTML_TMP_DIR)/
 	cp -v $(FILE_BASE_NAME).html $(HTML_TMP_DIR)/
-	cp -vr images $(HTML_TMP_DIR)/
+	cp -vr figs $(HTML_TMP_DIR)/
 
 	# Upload the HTML files
 	rsync -r -v -e ssh $(HTML_TMP_DIR)/ ${JDHP_DOCS_URI}/$(FILE_BASE_NAME)/
