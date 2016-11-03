@@ -27,7 +27,7 @@ Merge a given local branch in the current branch
 
 Example:
 
-.. image:: ./images/gitdags/merging_1.png
+.. image:: ./figs/gitdags/merging_1.png
    :alt: Merging 1
 
 ::
@@ -35,7 +35,7 @@ Example:
     git checkout master
     git merge experimental
 
-.. image:: ./images/gitdags/merging_2.png
+.. image:: ./figs/gitdags/merging_2.png
    :alt: Merging 2
 
 Merge a given remote branch in the current branch

@@ -67,7 +67,7 @@ Then you can go back to the ``DESTINATION_BRANCH_NAME`` branch and do a fast-for
 
 Example:
 
-.. image:: ./images/gitdags/rebasing_1.png
+.. image:: ./figs/gitdags/rebasing_1.png
    :alt: Rebasing 1
 
 ::
@@ -75,7 +75,7 @@ Example:
     git checkout experimental
     git rebase master
 
-.. image:: ./images/gitdags/rebasing_2.png
+.. image:: ./figs/gitdags/rebasing_2.png
    :alt: Rebasing 2
 
 ::
@@ -83,5 +83,5 @@ Example:
     git checkout master
     git merge experimental
 
-.. image:: ./images/gitdags/rebasing_3.png
+.. image:: ./figs/gitdags/rebasing_3.png
    :alt: Rebasing 3
