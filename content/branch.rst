@@ -189,3 +189,20 @@ Example::
     git checkout -b experimental origin/experimental
 
 .. http://stackoverflow.com/questions/67699/clone-all-remote-branches-with-git
+
+Remove the upstream information for a given branch
+--------------------------------------------------
+
+To remove the upstream information for ``LOCAL_BRANCH_NAME`` (i.e. the default
+remote to use with ``git pull`` and ``git push``)::
+
+    git branch --unset-upstream LOCAL_BRANCH_NAME
+
+If no branch is specified it defaults to the current branch.
+
+Check the result with::
+
+    git branch -vv
+
+.. http://stackoverflow.com/questions/12913988/opposite-of-git-branch-set-upstream
+
