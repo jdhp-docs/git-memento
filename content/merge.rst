@@ -49,6 +49,23 @@ Example::
 
     git merge upstream/master
 
+Merge a given remote tag in the current branch
+----------------------------------------------
+
+.. TODO check this one
+
+.. TODO est-ce que la version en une ligne "git merge REMOTE/TAG_NAME" marche ?
+
+::
+
+    git fetch REMOTE
+    git merge TAG_NAME
+
+Example::
+
+    git fetch upstream
+    git merge v0.1
+
 Cancel an uncommited merge
 --------------------------
 
