@@ -1,5 +1,7 @@
-GitHub collaboration workflow
-=============================
+Git collaboration workflows
+===========================
+
+See https://slides-jdhp-revealjs-jdhp-docs-0f24c7e5d58e66591a1f3f45db0b5606.gitlab.io/jdhp/git_workflows.html
 
 Roles
 -----
