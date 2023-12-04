@@ -105,6 +105,7 @@ Rename a remote branch
 ----------------------
 
 ::
+
     # Rename the local branch to the new name
     git branch -m <OLD_NAME> <NEW_NAME>
 
