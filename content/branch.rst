@@ -104,7 +104,24 @@ Example::
 Rename a remote branch
 ----------------------
 
-TODO
+::
+    # Rename the local branch to the new name
+    git branch -m <OLD_NAME> <NEW_NAME>
+
+    # Delete the old branch on remote - where <REMOTE> is, for example, origin
+    git push <REMOTE> --delete <OLD_NAME>
+
+    # Prevent git from using the old name when pushing in the next step.
+    # Otherwise, git will use the old upstream name instead of <NEW_NAME>.
+    git branch --unset-upstream <NEW_NAME>
+
+    # Push the new branch to remote
+    git push <REMOTE> <NEW_NAME>
+
+    # Reset the upstream branch for the NEW_NAME local branch
+    git push <REMOTE> -u <NEW_NAME>
+
+Source: https://stackoverflow.com/a/30590238
 
 .. http://stackoverflow.com/questions/4753888/git-renaming-branches-remotely
 
@@ -127,6 +144,45 @@ Example::
 
 .. https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Deleting-Remote-Branches
 .. http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely
+
+
+Archive a branch on GitLab
+--------------------------
+
+With the following procedure, the branch is archived as a tag and no longer clutters the 'branches' page on GitLab.
+It's still possible to access or reopen the branch from the tag at a later time.
+
+To archive the branch::
+
+    # Switch to the main branch
+    git checkout master
+
+    # Create a *tag* to keep all the commits of the branch you want to archive
+    git tag -a archive/<BRANCH_NAME> -m "Archiving the branch <BRANCH_NAME>" <BRANCH_NAME>
+
+    # Push the tag to GitLab
+    git push --tags
+
+    # Delete the branch to be archived (locally)
+    git branch -D <BRANCH_NAME>
+
+    # Delete the branch to be archived (on GitLab)
+    git push origin --delete <BRANCH_NAME>
+
+    # Verify the result
+    git branch -a
+
+    # The branch is no longer on the GitLab branches page but remains visible on the GitLab tags page
+
+To restore the branch::
+
+    # Create a new branch from the "archive/<BRANCH_NAME>" tag
+    git checkout -b <BRANCH_NAME> archive/<BRANCH_NAME>
+
+    # Push the branch to GitLab
+    git push origin <BRANCH_NAME>
+
+    # The branch is now available again on the GitLab branches page
 
 
 Get a graphical representation of all branches (local + remote)
