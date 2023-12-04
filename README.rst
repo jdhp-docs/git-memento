@@ -10,3 +10,10 @@ Copyright (c) 2016 Jérémie DECOCK (www.jdhp.org)
 * Source code: https://github.com/jdhp-docs/git-memento
 * Issue tracker: https://github.com/jdhp-docs/git-memento/issues
 
+Install required packages to build the document
+===============================================
+
+::
+
+    apt install docutils-common
+    apt install rst2pdf
