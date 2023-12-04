@@ -216,8 +216,8 @@ solved again with::
 
 See: http://stackoverflow.com/questions/6857082/redo-merge-of-just-a-single-file
 
-TODO...
--------
+Merge using the "ours" strategy
+-------------------------------
 
 ::
 
@@ -227,8 +227,12 @@ Example::
 
     git merge -s ours experimental
 
-TODO...
--------
+The ours strategy means that when you merge another branch into your current branch,
+the merge will always resolve any conflicts by keeping the content of the current branch (ours)
+and ignoring the content from the other branch (BRANCH_NAME).
+
+Merge using the "theirs" strategy
+---------------------------------
 
 ::
 
@@ -238,3 +242,11 @@ Example::
 
     git merge -s recursive -X theirs experimental
 
+
+The command is typically used in scenarios where you want to merge changes from another branch but resolve all conflicts
+by preferring the changes from the other branch.
+This can be particularly useful in situations where you know that the other branch has the most up-to-date or correct versions of conflicting files.
+
+However, it's important to use this command with caution,
+as it can overwrite changes in your current branch with changes from BRANCH_NAME without manual intervention,
+which might not always be desirable.
